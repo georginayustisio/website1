@@ -1,0 +1,147 @@
+.schoolb1 {
+    float: left; /* Float the button to the left */
+    background-color: white;
+    color: black;
+    padding: 6px 14px;
+    text-decoration: none;
+    font-size: 12px;
+    border: none;
+    border-radius: 20px; /* Adjust the border-radius for rounded corners */
+    margin-right: 10px; /* Add spacing between buttons */
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+/* Style for the "No" button */
+.schoolb2 {
+    float: right; /* Float the button to the right */
+    background-color: white;
+    color: black;
+    padding: 6px 14px;
+    text-decoration: none;
+    font-size: 12px;
+    border: none;
+    border-radius: 20px; /* Adjust the border-radius for rounded corners */
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+
+.button-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns for the buttons */
+    gap: 10px; /* Add space between the buttons */
+}
+
+
+
+#date-container {
+    position: absolute;
+    top: 20px; 
+    right: 20px; 
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+#date {
+    margin: 0;
+}
+
+.day-container {
+    display: flex;
+    align-items: start;
+    overflow-x: auto;  
+    height: 100vh;
+    width: 100%;
+    padding: 20px;
+}
+
+.stage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    justify-content: center;  
+    min-width: 300px; 
+    margin-right: 30px;  
+}
+
+
+.icon {
+    height: 50px;
+    width: 50px;
+}
+
+
+button {
+    background-color: #333;
+    color: white;
+    padding: 5px 10px; 
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+.icon-container {
+    display: flex;
+    flex-direction: column;  
+    align-items: center;     
+}
+
+.circle-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;  
+}
+
+.circle {
+    width: 10px;
+    height: 10px;
+    background-color: white; 
+    border-radius: 50%;
+    margin: 5px 0px;  
+    opacity: 0;
+}
+
+.question-container {
+    margin-left: 30px; 
+}
+
+.glow-circle {
+    width: 25%; /* Adjust to your desired width */
+    height: 25%; /* Maintains the image's aspect ratio */
+    opacity: 0;
+}
+
+.delayed-message {
+    opacity: 0;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2; /* Set your desired background color */
+    margin: 0;
+    padding: 0;
+}
+
+.text-container {
+    background-color: rgba(255, 255, 255, 0.8); /* Translucent white background */
+    border-radius: 15px; /* Rounded corners */
+    padding: 20px;
+    margin: 20px;
+}
+
+h1, p {
+    margin: 0;
+    padding: 5px;
+}

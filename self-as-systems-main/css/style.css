@@ -1,0 +1,244 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    align-items: flex-start; 
+    padding: 50px;     
+}
+
+h1{
+    text-align: center;
+    margin-top: 200px;
+}
+
+.start-button {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    width: 150px;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+/* CSS in your style.css file */
+
+/* Style for the "Yes" button */
+.schoolb1 {
+    float: left; /* Float the button to the left */
+    background-color: white;
+    color: black;
+    padding: 6px 14px;
+    text-decoration: none;
+    font-size: 12px;
+    border: none;
+    border-radius: 20px; /* Adjust the border-radius for rounded corners */
+    margin-right: 10px; /* Add spacing between buttons */
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+/* Style for the "No" button */
+.schoolb2 {
+    float: right; /* Float the button to the right */
+    background-color: white;
+    color: black;
+    padding: 6px 14px;
+    text-decoration: none;
+    font-size: 12px;
+    border: none;
+    border-radius: 20px; /* Adjust the border-radius for rounded corners */
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+
+.button-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns for the buttons */
+    gap: 10px; /* Add space between the buttons */
+}
+
+
+
+#date-container {
+    position: absolute;
+    top: 20px; 
+    right: 20px; 
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+#date {
+    margin: 0;
+}
+
+.day-container {
+    display: flex;
+    align-items: start;
+    overflow-x: auto;  
+    height: 100vh;
+    width: 100%;
+    padding: 20px;
+}
+
+.stage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    justify-content: center;  
+    min-width: 300px;  
+    margin: 0 auto;
+}
+
+
+.icon {
+    height: 50px;
+    width: 50px;
+}
+
+
+button {
+    background-color: #333;
+    color: white;
+    padding: 5px 10px; 
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+.icon-container {
+    display: flex;
+    flex-direction: column;  
+    align-items: center;     
+}
+
+.circle-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;  
+}
+
+.circle {
+    width: 10px;
+    height: 10px;
+    background-color: white; 
+    border-radius: 50%;
+    margin: 5px 0px;  
+    opacity: 0;
+    animation: footsteps 1s ease forwards;
+    /* box-shadow: 0 0 2px 4px yellow; */
+}
+
+.circle:nth-child(1) {
+    animation-delay: 0.8s;
+}
+
+.circle:nth-child(2) {
+    animation-delay: 1s;
+}
+
+.circle:nth-child(3) {
+    animation-delay: 1.4s;
+}
+
+.circle:nth-child(4) {
+    animation-delay: 1.8s;
+}
+
+.circle:nth-child(5) {
+    animation-delay: 2.2s;
+}
+
+.circle:nth-child(6) {
+    animation-delay: 2.6s;
+}
+
+@keyframes footsteps {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.hidden {
+    visibility: hidden;
+    opacity: 0; 
+    transition: opacity 0.5s; 
+}
+
+.fade-in {
+    opacity: 1;
+}
+
+.question-container {
+    margin-left: 30px; 
+}
+
+.glow-circle {
+    width: 25%; /* Adjust to your desired width */
+    height: 25%; /* Maintains the image's aspect ratio */
+    opacity: 0;
+    animation: fade-in 5s ease forwards;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    75% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.delayed-message {
+    opacity: 0;
+    animation: fade-in 2s ease-in-out forwards; /* Adjust the duration as needed */
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+.-container {
+    background-color: rgba(255, 255, 255, 0.8); /* Translucent white background */
+    border-radius: 15px; /* Rounded corners */
+    padding: 20px;
+    margin: 20px;
+}
+
+
